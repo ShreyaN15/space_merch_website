@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-[url('bgi.jpg')] bg-cover bg-center flex items-center justify-center">
+    <div class="container bg-gradient-to-t from-black via-blue-600 to-sky-300 hover:bg-gradient-to-b  px-28 py-5 relative ">
+        <nav class="flex items-center">
+            <img src="logo1.jpeg" class="w-40 cursor-pointer">
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5"><a href="#" class="text-white px-2">Home</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="text-white px-2">About</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="text-white px-2">Features</a></li>
+                <li class="list-none inline-block px-5"><a href="#" class="text-white px-2">Contact</a></li>
+                
+
+            </ul>
+            <img src="shopping.jpeg" class="w-32 cursor-pointer">
+        </nav>
+        <div class="text-white mt-10 max-w-xl">
+           
+            <h1 class="text-6xl font-medium leading-normal">Space Merchandise<br>delivery in <span class="font-light">1 day</span></h1>
+            <p>spacify offers you with all types of space merchandise you have ever dreamed of and these could be useful to gift your space enthusiastic buddy that too with less delivery time</p>
+        <div class="mt-20">
+            <a href="#" class="bg-amber-700 rounded-full py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-white hover:text-yellow duration-300 hover:border border border-transparent">order now</a>
+            <a href="#">Download app<span class="text-lg inline-block">&#10148</span></a>
+        </div>
+        </div>
+
+    <img src="shirt.jpeg" class="w-auto xl:w-auto absolute bottom-0 right-0">
+    </div>
+    <div class="stars"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stars = document.querySelector('.stars');
+            for (let i = 0; i < 200; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.top = Math.random() * 100 + 'vh';
+                star.style.left = Math.random() * 100 + 'vw';
+                stars.appendChild(star);
+            }
+        });
+    </script>
+    
+</body>
+</html>
